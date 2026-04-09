@@ -1,48 +1,115 @@
 body {
-  font-family: Arial;
   margin: 0;
-  background: #f8f6ff;
+  font-family: 'Poppins', sans-serif;
+  background: #0f0f1a;
+  color: white;
 }
 
+/* NAVBAR */
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  background: white;
+  padding: 25px 60px;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  color: #ff7a00;
 }
 
 nav a {
-  margin: 10px;
+  margin-left: 25px;
   text-decoration: none;
-  color: #6a0dad;
+  color: #aaa;
+  transition: 0.3s;
 }
 
-.hero {
-  text-align: center;
-  padding: 80px;
-  background: linear-gradient(135deg, #6a0dad, #ff7a00);
+nav a:hover {
   color: white;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at top, #6a0dad, #0f0f1a);
+}
+
+.hero h1 {
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+.hero span {
+  background: linear-gradient(90deg, #ff7a00, #ffb347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  color: #bbb;
+  margin-top: 10px;
+}
+
+/* BUTTONS */
+.cta {
+  margin-top: 30px;
 }
 
 button {
-  padding: 12px 20px;
-  background: orange;
+  padding: 14px 28px;
+  border-radius: 30px;
   border: none;
-  color: white;
+  margin: 10px;
   cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-.cards {
+.primary {
+  background: linear-gradient(90deg, #ff7a00, #ffb347);
+  color: black;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #555;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* FEATURES */
+.features {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  padding: 50px;
+  gap: 25px;
+  padding: 60px;
 }
 
 .card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 30px;
   width: 200px;
   text-align: center;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255,255,255,0.1);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
 }
