@@ -2,25 +2,48 @@
 <html>
 <head>
 <title>About - PetHubX</title>
+
 <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
 <nav>
-  <h2>PetHubX</h2>
+  <h2 class="logo">🐾 PetHubX</h2>
   <div>
     <a href="index.html">Home</a>
     <a href="features.html">Features</a>
     <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
   </div>
 </nav>
 
-<section class="hero">
+<section class="hero small-hero">
   <h1>About PetHubX</h1>
-  <p>We are building the future of pet co-parenting 🐾</p>
+
+  <div class="floating">
+    <img src="https://cdn-icons-png.flaticon.com/512/2138/2138440.png" class="pet pet2">
+  </div>
 </section>
+
+<section class="about">
+  <p>
+    PetHubX is built to simplify pet parenting.
+    We make pet care collaborative, transparent and stress-free.
+  </p>
+</section>
+
+<img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" id="petFollower">
+
+<script>
+const pet = document.getElementById("petFollower");
+
+document.addEventListener("mousemove", (e) => {
+  pet.style.left = e.clientX + "px";
+  pet.style.top = e.clientY + "px";
+});
+</script>
 
 </body>
 </html>
